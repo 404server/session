@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './styles/NavigationBar.css'
 import NavButton from "./NavButton";
+import { useNavigate } from 'react-router-dom';
 
 import {BiCog, BiHeart, BiLibrary, BiPlay} from "react-icons/bi";
 import {SiFireship} from "react-icons/si";
@@ -10,12 +11,18 @@ import {useTheme} from "./Theme";
 
 const NavigationBar = () => {
     const { theme } = useTheme();
-
+    const nav = useNavigate();
     const [image, setImage] = useState(`${process.env.PUBLIC_URL}/img/user.jpg`);
     useEffect(() => {
         api.get("me").then(res => {
             setImage(res.data.images[0].url)})
     }, []);
+
+    const handleSignOut = () => {
+        localStorage.removeItem('token');
+        nav('/login');
+    };
+
 
     return (
         <div className="navigation" style={{
@@ -23,7 +30,7 @@ const NavigationBar = () => {
             borderBottom: `2px solid ${theme.borderColor}`,
             boxShadow: `0 10px 10px 0 ${theme.boxShadowColor}`
         }}>
-            <img className="user-profile" src={image} alt="Your Alt Text"/>
+            <img className="user-profile" src={image} onClick={handleSignOut} alt="Your Alt Text"/>
             <div className="nav-buttons">
                 <NavButton title="Favourite" to="/favourite" icon={<BiHeart/>}/>
                 <NavButton title="Categories" to="/artists" icon={<BsPeopleFill/>}/>

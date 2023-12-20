@@ -1,5 +1,11 @@
 import React, { createContext, useState, useContext } from 'react';
 
+const defaultTheme = {
+    backgroundColor: 'rgb(165,221,218)',
+    borderColor: 'rgb(106,14,148)',
+    boxShadowColor: 'rgb(138,94,214)',
+};
+
 
 const Theme = createContext();
 
@@ -13,7 +19,7 @@ export const ThemeProvider = ({ children }) => {
     });
 
     return (
-        <Theme.Provider value={{ theme, setTheme }}>
+        <Theme.Provider value={{ theme, setTheme, resetTheme: () => setTheme(defaultTheme) }}>
             {children}
         </Theme.Provider>
     );

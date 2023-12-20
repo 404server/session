@@ -36,6 +36,7 @@ const HomeScreen = () => {
         <div className="main">
             <NavigationBar/>
             <Routes>
+                <Route path="/login" component={Login} />
                 <Route path="/" element={<LibraryScreen/>}/>
                 <Route path="/artists" element={<CategoriesScreen/>}/>
                 <Route path="/favourite" element={<FavouriteScreen/>}/>

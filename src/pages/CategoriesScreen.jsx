@@ -23,7 +23,10 @@ const CategoriesScreen = () => {
 
     const getPlaylists = (id) => {
         api.get(`/browse/categories/${id}/playlists`).then(res => {
-            playPlaylist(res?.data?.playlists?.items[0]?.href);
+            var url = res?.data?.playlists?.items[0]?.href;
+            var parts = url.split('/');
+            var playlistId = parts[parts.length - 1];
+            playPlaylist(playlistId);
         }).catch(err => {
             console.error('Error fetching categories:', err);
         });

@@ -2,7 +2,7 @@ import {useTheme} from '../components/Theme';
 import './styles/Settings.css';
 
 const SettingsScreen = () => {
-    const {theme, setTheme} = useTheme();
+    const {theme, setTheme, resetTheme} = useTheme();
 
     const handleChange = (key, value) => {
         setTheme({...theme, [key]: value});
@@ -34,6 +34,7 @@ const SettingsScreen = () => {
                     onChange={(e) => handleChange('boxShadowColor', e.target.value)}
                 />
             </label>
+            <button onClick={resetTheme}>Reset to Default</button>
         </div>
     );
 };
