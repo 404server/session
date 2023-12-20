@@ -1,0 +1,57 @@
+.player-container {
+    width: 100%;
+    height: 44%;
+    margin: 1% 0;
+}
+
+.player-left {
+    width: 68%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.player-right {
+    width: 32%;
+}
+
+.track-title {
+    text-align: center;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+    color: rgba(106, 14, 148, 0.45);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.artists {
+    color: rgba(106, 14, 148, 0.45);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.bottom-left {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.total-duration {
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.duration {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    color: rebeccapurple;
+}

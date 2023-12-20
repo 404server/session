@@ -1,0 +1,11 @@
+.container-body {
+    width: 95%;
+    height: 50%;
+    margin: 2% auto 3%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(0deg,rgba(133, 195, 214,1) 0%,rgba(157, 222, 250,0.1) 100%);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}

@@ -1,0 +1,8 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(27,31,39,255);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,13 @@
+.main-screen {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #85C3D6 12%, transparent 12.5%, transparent 87%, #85C3D6 87.5%, #85C3D6), linear-gradient(150deg, #85C3D6 12%, transparent 12.5%, transparent 87%, #85C3D6 87.5%, #85C3D6), linear-gradient(30deg, #85C3D6 12%, transparent 12.5%, transparent 87%, #85C3D6 87.5%, #85C3D6), linear-gradient(150deg, #85C3D6 12%, transparent 12.5%, transparent 87%, #85C3D6 87.5%, #85C3D6), linear-gradient(60deg, #85C3D677 25%, transparent 25.5%, transparent 75%, #85C3D677 75%, #85C3D677), linear-gradient(60deg, #85C3D677 25%, transparent 25.5%, transparent 75%, #85C3D677 75%, #85C3D677);
+    background-size: 36px 63px;
+    background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
+}
+
+.flex {
+    display: flex;
+}

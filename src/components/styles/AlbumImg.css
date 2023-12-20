@@ -1,0 +1,22 @@
+.img-container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.img-container img {
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.effect {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    z-index: -1;
+    width: 90%;
+    position: absolute;
+    top: 20px;
+}
