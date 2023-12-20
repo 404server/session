@@ -5,7 +5,7 @@ import Login from "../components/auth/Login";
 import NavigationBar from "../components/NavigationBar";
 import {Route, Routes} from "react-router-dom";
 import LibraryScreen from "./LibraryScreen";
-import ArtistsScreen from "./ArtistsScreen";
+import CategoriesScreen from "./CategoriesScreen";
 import FavouriteScreen from "./FavouriteScreen";
 import PlayerScreen from "./PlayerScreen";
 import TrendingScreen from "./TrendingScreen";
@@ -37,7 +37,7 @@ const HomeScreen = () => {
             <NavigationBar/>
             <Routes>
                 <Route path="/" element={<LibraryScreen/>}/>
-                <Route path="/artists" element={<ArtistsScreen/>}/>
+                <Route path="/artists" element={<CategoriesScreen/>}/>
                 <Route path="/favourite" element={<FavouriteScreen/>}/>
                 <Route path="/player" element={<PlayerScreen/>}/>
                 <Route path="/trending" element={<TrendingScreen/>}/>

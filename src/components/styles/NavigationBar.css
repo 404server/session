@@ -5,9 +5,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(165,221,218);
+    /*background-color: rgb(165,221,218);
     border-bottom: 2px solid rgb(106,14,148);
-    box-shadow: 0 10px 10px 0 rgb(138,94,214);
+    box-shadow: 0 10px 10px 0 rgb(138,94,214);*/
     z-index: 10;
 }
 

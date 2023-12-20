@@ -1,0 +1,69 @@
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+@keyframes pulseText {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.space-not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #081229;
+    background-image: url('DALL.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+    text-align: center;
+}
+
+.space-not-found-content {
+    color: white;
+}
+
+.animated-text {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0b5ed7, 0 0 40px #0b5ed7;
+    animation: pulseText 2s ease-in-out infinite;
+}
+
+.space-not-found-container h1 {
+    font-size: 10em;
+    margin: 0;
+}
+
+.space-not-found-container h2 {
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+.space-not-found-container p {
+    margin: 20px 0;
+}
+
+.space-planet-image {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.space-not-found-container button {
+    background-color: #0a3d62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.space-not-found-container button:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #0b5ed7;
+}
