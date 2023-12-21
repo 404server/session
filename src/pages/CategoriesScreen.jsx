@@ -26,6 +26,7 @@ const CategoriesScreen = () => {
             var url = res?.data?.playlists?.items[0]?.href;
             var parts = url.split('/');
             var playlistId = parts[parts.length - 1];
+            /*console.log(playlistId);*/
             playPlaylist(playlistId);
         }).catch(err => {
             console.error('Error fetching categories:', err);
